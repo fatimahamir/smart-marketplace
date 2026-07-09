@@ -1,0 +1,84 @@
+/* ===== Smart Community Marketplace — Green & Orange Theme ===== */
+
+:root {
+  --sm-green-dark: #14532D;
+  --sm-green: #1E8449;
+  --sm-green-light: #27AE60;
+  --sm-green-tint: #E8F5E9;
+
+  --sm-orange: #F5820D;
+  --sm-orange-light: #FFA94D;
+  --sm-orange-tint: #FFF4E6;
+
+  --sm-bg: #FAFAF7;
+  --sm-surface: #FFFFFF;
+  --sm-text: #1F2A1F;
+  --sm-text-muted: #6B7A6B;
+  --sm-border: #E3E8E1;
+
+  --bs-primary: var(--sm-green);
+  --bs-primary-rgb: 30, 132, 73;
+  --bs-secondary: var(--sm-orange);
+  --bs-secondary-rgb: 245, 130, 13;
+  --bs-body-bg: var(--sm-bg);
+  --bs-body-color: var(--sm-text);
+  --bs-border-radius: 0.6rem;
+  --bs-border-radius-lg: 0.9rem;
+  --bs-font-sans-serif: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--sm-bg);
+  color: var(--sm-text);
+  font-family: var(--bs-font-sans-serif);
+}
+
+.btn-primary { background-color: var(--sm-green); border-color: var(--sm-green); }
+.btn-primary:hover, .btn-primary:focus { background-color: var(--sm-green-dark); border-color: var(--sm-green-dark); }
+
+.btn-secondary { background-color: var(--sm-orange); border-color: var(--sm-orange); color: #fff; }
+.btn-secondary:hover, .btn-secondary:focus { background-color: #d96f0a; border-color: #d96f0a; color: #fff; }
+
+.btn-outline-primary { color: var(--sm-green); border-color: var(--sm-green); }
+.btn-outline-primary:hover { background-color: var(--sm-green); border-color: var(--sm-green); }
+
+.sm-navbar { background-color: var(--sm-surface); border-bottom: 1px solid var(--sm-border); box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.sm-navbar .navbar-brand { font-weight: 700; color: var(--sm-green-dark) !important; letter-spacing: -0.02em; }
+.sm-navbar .navbar-brand span { color: var(--sm-orange); }
+.sm-navbar .nav-link { color: var(--sm-text) !important; font-weight: 500; }
+.sm-navbar .nav-link:hover, .sm-navbar .nav-link.active { color: var(--sm-green) !important; }
+
+.sm-card { background: var(--sm-surface); border: 1px solid var(--sm-border); border-radius: var(--bs-border-radius-lg); transition: transform 0.15s ease, box-shadow 0.15s ease; overflow: hidden; }
+.sm-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(30,132,73,0.12); }
+.sm-card .sm-price { color: var(--sm-green); font-weight: 700; }
+.sm-badge-category { background-color: var(--sm-green-tint); color: var(--sm-green-dark); font-weight: 600; border-radius: 999px; padding: 0.25rem 0.7rem; font-size: 0.75rem; }
+.sm-rating { color: var(--sm-orange); font-weight: 600; }
+
+.sm-hero { background: linear-gradient(135deg, var(--sm-green-dark) 0%, var(--sm-green) 60%, var(--sm-orange) 160%); color: #fff; border-radius: var(--bs-border-radius-lg); padding: 3.5rem 2rem; }
+.sm-hero h1 { font-weight: 800; }
+.sm-hero .btn-light { color: var(--sm-green-dark); font-weight: 600; }
+
+.form-control:focus, .form-select:focus { border-color: var(--sm-green); box-shadow: 0 0 0 0.2rem rgba(30,132,73,0.15); }
+
+.sm-auth-wrapper { min-height: calc(100vh - 140px); display: flex; align-items: center; justify-content: center; background: var(--sm-green-tint); padding: 2rem 1rem; }
+.sm-auth-card { background: var(--sm-surface); border-radius: var(--bs-border-radius-lg); box-shadow: 0 10px 40px rgba(20,83,45,0.1); max-width: 440px; width: 100%; padding: 2.25rem; }
+.sm-auth-card h2 { color: var(--sm-green-dark); font-weight: 700; }
+
+.sm-footer { background: var(--sm-green-dark); color: #d9ecdf; padding: 2rem 0 1rem; margin-top: 3rem; }
+.sm-footer a { color: #ffd9a8; text-decoration: none; }
+.sm-footer a:hover { text-decoration: underline; }
+
+.sm-section-title { font-weight: 700; color: var(--sm-green-dark); border-left: 4px solid var(--sm-orange); padding-left: 0.75rem; margin-bottom: 1.5rem; }
+.sm-spinner-wrap { display: flex; align-items: center; justify-content: center; min-height: 300px; }
+
+.sm-tab-nav .nav-link { color: var(--sm-text); font-weight: 600; }
+.sm-tab-nav .nav-link.active { color: var(--sm-green) !important; border-bottom: 2px solid var(--sm-orange); }
+
+.sm-chat-bubble-me { background: var(--sm-green); color: #fff; border-radius: 1rem 1rem 0.2rem 1rem; }
+.sm-chat-bubble-them { background: #fff; border: 1px solid var(--sm-border); border-radius: 1rem 1rem 1rem 0.2rem; }
+
+.sm-status-pending { color: #b7791f; background: #FFF4E6; }
+.sm-status-accepted { color: var(--sm-green-dark); background: var(--sm-green-tint); }
+.sm-status-completed { color: #0c5460; background: #d1ecf1; }
+.sm-status-rejected, .sm-status-cancelled { color: #842029; background: #f8d7da; }
+.sm-status-badge { padding: 0.25rem 0.7rem; border-radius: 999px; font-size: 0.75rem; font-weight: 700; text-transform: capitalize; }
