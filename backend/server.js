@@ -21,7 +21,20 @@ const app = express();
 
 // Security & parsing middleware
 app.use(helmet());
-app.use(cors({ origin: process.env.CLIENT_URL || '*', credentials: true }));
+const allowedOrigins = (process.env.CLIENT_URL || '*')
+  .split(',')
+  .map((o) => o.trim());
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes('*') || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true,
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -50,7 +63,16 @@ app.use(errorHandler);
 // HTTP + Socket.io server
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: process.env.CLIENT_URL || '*', credentials: true },
+  cors: {
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes('*') || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    credentials: true,
+  },
 });
 
 io.on('connection', (socket) => {
