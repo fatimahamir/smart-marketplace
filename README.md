@@ -74,11 +74,11 @@ Built with modern web technologies, the platform provides a secure, responsive, 
 
 > Add your screenshots below.
 
-### Home Page
+### Hero Page
 
 <img src="screenshots/Home.jpeg" width="900"/>
 
-### Hero 
+### Home 
 
 <img src="screenshots/Hero.jpeg" width="900"/>
 
