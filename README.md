@@ -76,23 +76,28 @@ Built with modern web technologies, the platform provides a secure, responsive, 
 
 ### Home Page
 
-<img src="screenshots/home.png" width="900"/>
+<img src="screenshots/Home.jpeg" width="900"/>
 
-### Products
+### Hero 
 
-<img src="screenshots/products.png" width="900"/>
+<img src="screenshots/Hero.jpeg" width="900"/>
 
-### Services
+### Registration Page 
 
-<img src="screenshots/services.png" width="900"/>
-
-### Chat
-
-<img src="screenshots/chat.png" width="900"/>
+<img src="screenshots/reg.jpeg" width="900"/>
 
 ### Dashboard
 
-<img src="screenshots/dashboard.png" width="900"/>
+<img src="screenshots/dashboard.jpeg" width="900"/>
+
+### Products
+
+<img src="screenshots/product.jpeg" width="900"/>
+
+### Chat
+
+<img src="screenshots/msg.jpeg" width="900"/>
+
 
 ---
 
