@@ -174,7 +174,7 @@ CLIENT_URL=
 **Fatima Amir**
 
 - GitHub: https://github.com/fatimahamir
-- LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/
+- LinkedIn: https://www.linkedin.com/in/fatima-amir-880595320/
   
 ---
 
